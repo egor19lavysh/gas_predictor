@@ -73,7 +73,7 @@ if st.button("Рассчитать"):
                 new = [[j[0], j[1], j[2][0], j[2][1]] for j in zip(dates, forecast, data)]
 
                 
-                workbook = openpyxl.load_workbook(f'Данные по регионам\\region {reg}.xlsx')
+                workbook = openpyxl.load_workbook(f'Данные по регионам/region {reg}.xlsx')
                 sheet = workbook.active
 
                 for row in new:
