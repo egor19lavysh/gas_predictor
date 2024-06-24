@@ -38,7 +38,7 @@ if st.button("Рассчитать"):
 
             print(features)
 
-            model = joblib.load(f"linears\\linear{reg}.joblib")
+            model = joblib.load(f"linears/linear{reg}.joblib")
 
 
             forecast = model.predict(features)
